@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Cheque Scanner</string>
+    <string name="scan_cheque">Scan Cheque</string>
+    <string name="home">Home</string>
+    <string name="exit">Exit</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="history">History</string>
+    <string name="amount">Amount</string>
+    <string name="name">To</string>
+    <string name="account_number">Account Number</string>
+    <string name="save">Save</string>
+    <string name="date_on_cheque">Date on Cheque</string>
+    <string name="enter_payee_name">From</string>
+    <string name="dd_mm_yyyy">DD/MM/YYYY</string>
+</resources>

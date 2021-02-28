@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="@string/home"
+            android:icon="@drawable/ic_home"/>
+
+        <item
+            android:id="@+id/scan"
+            android:title="@string/scan_cheque"
+            android:icon="@drawable/ic_scanner"/>
+
+        <item
+            android:id="@+id/history"
+            android:title="@string/history"
+            android:icon="@drawable/ic_history"/>
+
+        <item
+            android:id="@+id/exit"
+            android:title="@string/exit"
+            android:icon="@drawable/ic_exit"/>
+    </group>
+</menu>

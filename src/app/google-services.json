@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "816716857326",
+    "project_id": "cheque-scanner-b65e0",
+    "storage_bucket": "cheque-scanner-b65e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816716857326:android:f89d2947b9a144531058ff",
+        "android_client_info": {
+          "package_name": "com.yashas.chequescanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "816716857326-dpile1ccmigmapjpk89r2t98of9ljfaq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yashas.chequescanner",
+            "certificate_hash": "3e0bf0c958fea2d87cc868b37b7d70c5b387f066"
+          }
+        },
+        {
+          "client_id": "816716857326-d20msuk0hfs4ioaas0s7nm21f93k318r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_VhtZPMf6JZKyqQ6BSRmwSVwIts_M7gs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "816716857326-d20msuk0hfs4ioaas0s7nm21f93k318r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

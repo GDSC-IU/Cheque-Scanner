@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmets.ScanDetailsFragment"
+    android:background="@color/background">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_error"
+        android:minHeight="@dimen/_180sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/rounded_background"
+        android:padding="@dimen/_10sdp"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:indeterminate="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        android:layout_marginTop="@dimen/_120sdp"
+        android:elevation="@dimen/_10sdp"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dataLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        android:padding="@dimen/_5sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/payeeTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_payee_name"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13sdp"
+            android:paddingHorizontal="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/payee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Payee Name"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"
+            android:background="@drawable/edit_text_background"
+            app:layout_constraintTop_toBottomOf="@id/payeeTxt"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:imeOptions="actionNext"
+            android:maxLines="1"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/amountTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/amount"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13sdp"
+            android:paddingHorizontal="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            tools:text="₹42000"
+            android:imeOptions="actionNext"
+            android:paddingVertical="@dimen/_3sdp"
+            android:paddingHorizontal="@dimen/_8sdp"
+            app:layout_constraintTop_toBottomOf="@id/amountTxt"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:maxLines="1"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/nameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            app:layout_constraintTop_toBottomOf="@id/payee"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13sdp"
+            android:paddingHorizontal="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            tools:text="Yashas Majmudar"
+            android:imeOptions="actionNext"
+            android:paddingVertical="@dimen/_3sdp"
+            android:paddingHorizontal="@dimen/_8sdp"
+            app:layout_constraintTop_toBottomOf="@id/nameTxt"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:maxLines="1"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/accountNumberTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/account_number"
+            app:layout_constraintTop_toBottomOf="@id/amount"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13sdp"
+            android:paddingHorizontal="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/accountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            tools:text="763929873488"
+            android:imeOptions="actionDone"
+            android:paddingVertical="@dimen/_3sdp"
+            android:paddingHorizontal="@dimen/_8sdp"
+            app:layout_constraintTop_toBottomOf="@id/accountNumberTxt"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:maxLines="1"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/dateTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/date_on_cheque"
+            app:layout_constraintTop_toBottomOf="@id/accountNumber"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13sdp"
+            android:paddingHorizontal="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            tools:text="13/04/2001"
+            android:hint="@string/dd_mm_yyyy"
+            android:imeOptions="actionDone"
+            android:paddingVertical="@dimen/_3sdp"
+            android:paddingHorizontal="@dimen/_8sdp"
+            app:layout_constraintTop_toBottomOf="@id/dateTxt"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:maxLines="1"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/save"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/rounded_background"
+        android:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/save"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/_20sdp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
