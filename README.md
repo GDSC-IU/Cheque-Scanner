@@ -11,8 +11,6 @@ Students     :
  - Khushi Manek
  - Ritika Dhall
  - Frenil Patel
- 
-Team Leader Email: yashashm@gmail.com
 <br>
 
 ## Steps to Use
