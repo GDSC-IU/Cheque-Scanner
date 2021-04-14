@@ -1,5 +1,5 @@
 # Cheque Scanner
-This is an aoo which uses the device native camera and sends image to online firebase database. 
+This is an app which uses the device native camera and sends image to online firebase database. 
 <br>On the database the image is processed using NLP(Natural Language Processing) and text is returned which is displayed to the user.
 <br>
 
